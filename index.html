@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jiayi Kong | Academic Homepage</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Jiayi&nbsp;Kong</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero / About -->
+  <section id="about" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-eyebrow"><i class="fas fa-circle"></i> Available for full-time / postdoc from 2027</p>
+          <h1>Jiayi Kong</h1>
+          <p class="subtitle">Ph.D. Candidate · Computer Graphics &amp; 3D Generative AI</p>
+          <p class="affiliation">
+            <i class="fas fa-university"></i> Nanyang Technological University, S-Lab
+            &nbsp;·&nbsp;
+            <i class="fas fa-flask"></i> Research Intern @ Tencent Hunyuan3D
+          </p>
+          <p class="hero-bio">
+            I am a researcher in computer graphics and geometric deep learning, with a growing focus on
+            <strong>3D generation</strong> — built upon strong foundations in implicit representations,
+            geometry reconstruction, and neural rendering. My work turns sparse, noisy, and incomplete
+            inputs into high-fidelity 3D. I am advised by
+            <a href="https://personal.ntu.edu.sg/yhe/" target="_blank" rel="noopener" class="inline-link">Prof. Ying He</a>,
+            with multiple works published at
+            <strong>ACM&nbsp;TOG&nbsp;(SIGGRAPH)</strong> and <strong>ICML</strong>.
+          </p>
+          <div class="hero-links">
+            <a href="mailto:jiayi006@e.ntu.edu.sg" class="btn"><i class="fas fa-envelope"></i> Email</a>
+            <a href="#" class="btn btn-outline"><i class="fab fa-google"></i> Google Scholar</a>
+            <a href="#" class="btn btn-outline"><i class="fas fa-file-pdf"></i> CV</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <!-- PHOTO #1: Replace src with your portrait (recommended: square, 600x600px+, professional headshot) -->
+          <div class="photo-frame">
+            <img src="assets/portrait.jpg" alt="Jiayi Kong" onerror="this.parentElement.classList.add('photo-placeholder'); this.style.display='none';" />
+            <div class="photo-fallback">
+              <i class="fas fa-user"></i>
+              <span>portrait.jpg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Achievement stats bar -->
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">ACM TOG / SIGGRAPH</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-num">5</div>
+          <div class="stat-label">Publications</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-num">1<span class="stat-sup">/300</span></div>
+          <div class="stat-label">Undergrad GPA Rank</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-num">4<span class="stat-sup">×</span></div>
+          <div class="stat-label">Top Venues (TOG·ICML·AAAI)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="section">
+    <div class="container">
+      <h2 class="section-title">Publications</h2>
+      <p class="section-sub">Mostly first-author works at top graphics &amp; ML venues. <span class="hl">*</span> denotes equal contribution.</p>
+
+      <ol class="simple-pub-list">
+        <li class="simple-pub">
+          <span class="venue-badge venue-tog">ACM TOG 2026 · SIGGRAPH</span>
+          <p class="pub-title">Quasi-Medial Distance Field (Q-MDF): A Robust Method for Approximating and Discretizing Neural Medial Axis</p>
+          <p class="pub-authors"><strong>Jiayi Kong*</strong>, Chen Zong*, Jun Luo, Shiqing Xin, Fei Hou, Hanqing Jiang, Chen Qian, Ying He</p>
+        </li>
+        <li class="simple-pub">
+          <span class="venue-badge venue-tog">ACM TOG · in press</span>
+          <p class="pub-title">Voronoi-Assisted Diffusion for Computing Unsigned Distance Fields from Unoriented Points</p>
+          <p class="pub-authors"><strong>Jiayi Kong*</strong>, Chen Zong*, Junkai Deng, Xuhui Chen, Fei Hou, Shiqing Xin, Junhui Hou, Chen Qian, Ying He</p>
+        </li>
+        <li class="simple-pub">
+          <span class="venue-badge venue-conf">ICML 2026</span>
+          <p class="pub-title">Metric-Phase Fields: Decoupling Distance and Sign for Thin-Structure Reconstruction from Unoriented Point Clouds</p>
+          <p class="pub-authors"><strong>Jiayi Kong</strong>, Xuhui Chen, Chen Zong, Fei Hou, Junhui Hou, Wenping Wang, Ying He</p>
+        </li>
+        <li class="simple-pub">
+          <span class="venue-badge venue-conf">AAAI 2025</span>
+          <p class="pub-title">Do Not Deepfake Me: Privacy-Preserving Neural 3D Head Reconstruction Without Sensitive Images</p>
+          <p class="pub-authors"><strong>Jiayi Kong</strong>, Xurui Song, Shuo Huai, Baixin Xu, Jun Luo, Ying He</p>
+        </li>
+        <li class="simple-pub">
+          <span class="venue-badge venue-conf">EMNLP Findings 2025</span>
+          <p class="pub-title">Dagger Behind Smile: Fool LLMs with a Happy Ending Story</p>
+          <p class="pub-authors">Xurui Song*, Zhixin Xie*, Shuo Huai, <strong>Jiayi Kong</strong>, Jun Luo</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Academic Service -->
+  <section id="service" class="section">
+    <div class="container">
+      <h2 class="section-title">Academic Service</h2>
+      <p class="section-sub">Program committee &amp; reviewing for top graphics and AI venues.</p>
+      <ul class="service-list">
+        <li class="service-item">
+          <div class="service-icon"><i class="fas fa-users-gear"></i></div>
+          <div class="service-body">
+            <p class="service-role">International Program Committee (IPC) · Technical Program Committee</p>
+            <p class="service-venue">Pacific Graphics (PG) 2026</p>
+          </div>
+        </li>
+        <li class="service-item">
+          <div class="service-icon"><i class="fas fa-clipboard-check"></i></div>
+          <div class="service-body">
+            <p class="service-role">Reviewer</p>
+            <p class="service-venue">AAAI Conference on Artificial Intelligence</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Research Interests -->
+  <section id="research" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Research Interests</h2>
+      <div class="interests-grid">
+        <div class="interest-card">
+          <div class="interest-icon"><i class="fas fa-cubes"></i></div>
+          <h4>3D Generation</h4>
+          <p>Native 3D generative modeling, shape generation, geometry-aware generative pipelines</p>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon"><i class="fas fa-draw-polygon"></i></div>
+          <h4>3D Reconstruction &amp; Modeling</h4>
+          <p>Point-cloud reconstruction, shape modeling, geometry recovery</p>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon"><i class="fas fa-chart-area"></i></div>
+          <h4>Implicit Representations</h4>
+          <p>Implicit-function-based modeling (SDF / UDF / medial fields), geometry-aware learning</p>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon"><i class="fas fa-eye"></i></div>
+          <h4>Neural Rendering</h4>
+          <p>Radiance-field-based view synthesis and reconstruction (NeuS, 3DGS)</p>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon"><i class="fas fa-brain"></i></div>
+          <h4>LLM-Assisted 3D</h4>
+          <p>Leveraging LLMs to predict mesh segmentation for improved local geometry modeling</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Experience -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <h2 class="section-title">Education</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Ph.D. in Computer Science</h3>
+                  <span class="timeline-date">Aug 2023 – Present</span>
+                </div>
+                <p class="timeline-org">Nanyang Technological University · S-Lab</p>
+                <p class="timeline-desc">Supervised by <a href="https://personal.ntu.edu.sg/yhe/" target="_blank" rel="noopener" class="inline-link">Prof. Ying He</a> · Thesis submission expected Jan 2027</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>B.Eng. in Software Engineering</h3>
+                  <span class="timeline-date">2019 – 2023</span>
+                </div>
+                <p class="timeline-org">Shandong University · School of Software</p>
+                <p class="timeline-desc">Advised by Prof. Yuanfeng Zhou · GPA Rank <strong>1/300</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 class="section-title">Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Research Intern</h3>
+                  <span class="timeline-date">2026 – Present</span>
+                </div>
+                <p class="timeline-org">Tencent Hunyuan3D · Singapore</p>
+                <ul class="timeline-detail-list">
+                  <li>Foundation-model research for large-scale 3D generation.</li>
+                  <li>Geometric representations for high-quality, controllable 3D generative modeling.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <div class="contact-grid">
+        <a href="mailto:jiayi006@e.ntu.edu.sg" class="contact-item">
+          <i class="fas fa-envelope"></i><span>jiayi006@e.ntu.edu.sg</span>
+        </a>
+        <a href="#" class="contact-item">
+          <i class="fab fa-google"></i><span>Google Scholar</span>
+        </a>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i><span>+65 8175 9613</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i><span>Singapore</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Jiayi Kong · Nanyang Technological University</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
