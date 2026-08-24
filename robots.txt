@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jiayi-scarlett.github.io/sitemap.xml
